@@ -1,0 +1,17 @@
+note over Selain:
+Käyttäjä on nyt kirjoittanut
+muistiinpanon ja painaa 'Save'-nappia.
+spa.js lisää sen taulukkoon 'notes' ja
+piirtää muistiinpanot sivulle uudelleen.
+Vasta sitten se lähettää muistiinpanon
+palvelimelle.
+end note
+Selain->Palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa\nnote={"content":"testing testing","date":"2020-01-18T12:28:42.473Z"
+Palvelin-->Selain: HTTP 201 Created\n{"message":"note created"}
+note over Selain:
+Palvelin vastasi koodilla 201, mikä
+tarkoittaa, että pyyntö onnistui.
+Palvelin lähetti myös vastauksen
+{"message":"note created"}, jonka spa.js
+tulostaa konsoliin.
+end note
